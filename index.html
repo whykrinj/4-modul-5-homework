@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS IT Calculator</title>
+    <script type="module" src="main.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 h-screen flex justify-center items-center">
+    <div class="text-center bg-white p-8 rounded-lg shadow-lg max-w-sm">
+        <h1 class="text-2xl font-bold mb-6 text-purple-700">MARS IT Calculator</h1>
+        <input id="input1" type="number" class="w-full mb-4 p-2 border border-gray-300 rounded"
+            placeholder="Введите первое число">
+        <input id="input2" type="number" class="w-full mb-4 p-2 border border-gray-300 rounded"
+            placeholder="Введите второе число">
+        <div class="grid grid-cols-2 gap-4">
+            <button id="add" class="bg-green-500 text-white p-2 rounded">Сложение</button>
+            <button id="subtract" class="bg-green-500 text-white p-2 rounded">Вычитание</button>
+            <button id="multiply" class="bg-green-500 text-white p-2 rounded">Умножение</button>
+            <button id="divide" class="bg-green-500 text-white p-2 rounded">Деление</button>
+        </div>
+        <button id="reset" class="mt-4 bg-red-500 text-white w-full p-2 rounded">Сбросить</button>
+        <p class="mt-6 text-xl font-semibold text-purple-700">Результат: <span id="result">0</span></p>
+
+    </div>
+</body>
+
+</html>
